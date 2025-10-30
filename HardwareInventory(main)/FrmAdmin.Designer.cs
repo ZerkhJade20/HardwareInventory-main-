@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAdmin));
-            System.Windows.Forms.Button btnAdmin;
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -41,7 +40,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            btnAdmin = new System.Windows.Forms.Button();
+            this.btnAdminLogin = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -85,12 +84,12 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Firebrick;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.btnAdminLogin);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.txtAdminPassword);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.txtAdminUsername);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(btnAdmin);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(541, 42);
@@ -148,19 +147,6 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "Welcome Admin!";
             // 
-            // btnAdmin
-            // 
-            btnAdmin.BackColor = System.Drawing.Color.DarkSlateGray;
-            btnAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            btnAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            btnAdmin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            btnAdmin.Location = new System.Drawing.Point(116, 414);
-            btnAdmin.Name = "btnAdmin";
-            btnAdmin.Size = new System.Drawing.Size(319, 61);
-            btnAdmin.TabIndex = 12;
-            btnAdmin.Text = "Login";
-            btnAdmin.UseVisualStyleBackColor = false;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -183,6 +169,24 @@
             this.label1.Size = new System.Drawing.Size(135, 49);
             this.label1.TabIndex = 10;
             this.label1.Text = "Login";
+            // 
+            // btnAdminLogin
+            // 
+            this.btnAdminLogin.Animated = true;
+            this.btnAdminLogin.BorderRadius = 15;
+            this.btnAdminLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAdminLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAdminLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAdminLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAdminLogin.FillColor = System.Drawing.Color.DarkSlateGray;
+            this.btnAdminLogin.Font = new System.Drawing.Font("Segoe UI", 18F);
+            this.btnAdminLogin.ForeColor = System.Drawing.Color.White;
+            this.btnAdminLogin.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnAdminLogin.Location = new System.Drawing.Point(142, 414);
+            this.btnAdminLogin.Name = "btnAdminLogin";
+            this.btnAdminLogin.Size = new System.Drawing.Size(278, 58);
+            this.btnAdminLogin.TabIndex = 18;
+            this.btnAdminLogin.Text = "Login";
             // 
             // FrmAdmin
             // 
@@ -220,5 +224,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Button btnAdminLogin;
     }
 }

@@ -24,12 +24,22 @@ namespace HardwareInventory_main_
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnAdmin_Click_1(object sender, EventArgs e)
+        {
             FrmAdmin frmAdmin = new FrmAdmin();
             frmAdmin.Show();
             this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             FrmWorker frmWorker = new FrmWorker();
             frmWorker.Show();

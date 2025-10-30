@@ -34,13 +34,13 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnWorker = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtWorkerUsername = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtWorkerPassword = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnWorkerLogin = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -84,12 +84,12 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Firebrick;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.btnWorkerLogin);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.txtWorkerPassword);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.txtWorkerUsername);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.btnWorker);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(541, 42);
@@ -108,19 +108,6 @@
             this.label3.Size = new System.Drawing.Size(409, 57);
             this.label3.TabIndex = 5;
             this.label3.Text = "Welcome Worker!";
-            // 
-            // btnWorker
-            // 
-            this.btnWorker.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btnWorker.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnWorker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWorker.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnWorker.Location = new System.Drawing.Point(116, 414);
-            this.btnWorker.Name = "btnWorker";
-            this.btnWorker.Size = new System.Drawing.Size(319, 61);
-            this.btnWorker.TabIndex = 4;
-            this.btnWorker.Text = "Login";
-            this.btnWorker.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -183,6 +170,24 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Password:";
             // 
+            // btnWorkerLogin
+            // 
+            this.btnWorkerLogin.Animated = true;
+            this.btnWorkerLogin.BorderRadius = 15;
+            this.btnWorkerLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnWorkerLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnWorkerLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnWorkerLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnWorkerLogin.FillColor = System.Drawing.Color.DarkSlateGray;
+            this.btnWorkerLogin.Font = new System.Drawing.Font("Segoe UI", 18F);
+            this.btnWorkerLogin.ForeColor = System.Drawing.Color.White;
+            this.btnWorkerLogin.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnWorkerLogin.Location = new System.Drawing.Point(144, 413);
+            this.btnWorkerLogin.Name = "btnWorkerLogin";
+            this.btnWorkerLogin.Size = new System.Drawing.Size(278, 58);
+            this.btnWorkerLogin.TabIndex = 19;
+            this.btnWorkerLogin.Text = "Login";
+            // 
             // FrmWorker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -212,12 +217,12 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnWorker;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtWorkerUsername;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtWorkerPassword;
+        private Guna.UI2.WinForms.Guna2Button btnWorkerLogin;
     }
 }
