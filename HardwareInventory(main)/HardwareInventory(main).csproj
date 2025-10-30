@@ -180,6 +180,8 @@
   <ItemGroup>
     <None Include="Resources\download.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\8c336cae6515a71beb9267a516b4c196.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

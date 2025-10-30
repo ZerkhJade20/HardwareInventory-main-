@@ -21,5 +21,10 @@ namespace HardwareInventory_main_
         {
               
         }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
