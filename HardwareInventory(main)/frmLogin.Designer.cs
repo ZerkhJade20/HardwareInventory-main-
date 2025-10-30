@@ -44,7 +44,8 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Gray;
+            this.panel2.BackColor = System.Drawing.Color.Firebrick;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.btnWorker);
             this.panel2.Controls.Add(this.label2);
@@ -59,6 +60,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(23, 203);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(253, 25);
@@ -84,7 +86,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(16, 154);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(135, 49);
@@ -107,7 +109,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.BackColor = System.Drawing.Color.Brown;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(39, 33);
             this.panel1.Name = "panel1";
@@ -119,7 +122,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(16, 42);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(478, 446);
+            this.pictureBox1.Size = new System.Drawing.Size(465, 446);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -128,11 +131,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(95, 29);
+            this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(95, 42);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(335, 74);
+            this.label3.Size = new System.Drawing.Size(374, 82);
             this.label3.TabIndex = 5;
             this.label3.Text = "Welcome!";
             // 
@@ -144,11 +147,12 @@
             this.BackgroundImage = global::HardwareInventory_main_.Properties.Resources.futuristic_abstract_dark_red_and_white_papercut_overlap_on_bright_white_color_geometric_design_modern_overlap_papercut_background_vector;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1119, 638);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
