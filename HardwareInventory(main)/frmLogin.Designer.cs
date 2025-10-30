@@ -28,31 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAdmin = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnWorker = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gray;
+            this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.btnWorker);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.btnAdmin);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(247, 36);
+            this.panel2.Location = new System.Drawing.Point(539, 33);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(608, 554);
+            this.panel2.Size = new System.Drawing.Size(536, 554);
             this.panel2.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(23, 167);
+            this.label2.Location = new System.Drawing.Point(23, 203);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(253, 25);
             this.label2.TabIndex = 3;
@@ -66,7 +73,7 @@
             this.btnAdmin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAdmin.Location = new System.Drawing.Point(28, 245);
             this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(546, 64);
+            this.btnAdmin.Size = new System.Drawing.Size(477, 64);
             this.btnAdmin.TabIndex = 1;
             this.btnAdmin.Text = "Admin";
             this.btnAdmin.UseVisualStyleBackColor = false;
@@ -76,13 +83,13 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(16, 75);
+            this.label1.Location = new System.Drawing.Point(16, 154);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 74);
+            this.label1.Size = new System.Drawing.Size(135, 49);
             this.label1.TabIndex = 0;
-            this.label1.Text = "LogIn";
+            this.label1.Text = "Login";
             // 
             // btnWorker
             // 
@@ -92,11 +99,42 @@
             this.btnWorker.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnWorker.Location = new System.Drawing.Point(28, 337);
             this.btnWorker.Name = "btnWorker";
-            this.btnWorker.Size = new System.Drawing.Size(546, 64);
+            this.btnWorker.Size = new System.Drawing.Size(477, 64);
             this.btnWorker.TabIndex = 4;
             this.btnWorker.Text = "Worker";
             this.btnWorker.UseVisualStyleBackColor = false;
             this.btnWorker.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(39, 33);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(510, 554);
+            this.panel1.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(16, 42);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(478, 446);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(95, 29);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(335, 74);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Welcome!";
             // 
             // frmLogin
             // 
@@ -106,6 +144,7 @@
             this.BackgroundImage = global::HardwareInventory_main_.Properties.Resources.futuristic_abstract_dark_red_and_white_papercut_overlap_on_bright_white_color_geometric_design_modern_overlap_papercut_background_vector;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1119, 638);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -114,6 +153,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -125,6 +166,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnWorker;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
